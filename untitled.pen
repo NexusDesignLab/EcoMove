@@ -1,0 +1,4682 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "yNYjl",
+      "x": 3040,
+      "y": 0,
+      "name": "Редактор — Forest Sage",
+      "theme": {
+        "mode": "sage"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "h2Zq0",
+          "name": "Верхня панель",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qZx10",
+              "name": "Fame 1",
+              "clip": true,
+              "width": 143,
+              "height": 45,
+              "fill": "$gold",
+              "cornerRadius": 10,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#424d4f80",
+                "offset": {
+                  "x": -5,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qgNag",
+                  "name": "Логотип",
+                  "theme": {
+                    "mode": "dark"
+                  },
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UGltI",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "UIForge",
+                      "fontFamily": "Knewave",
+                      "fontSize": 25,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "trS7b",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "GEuvC",
+              "name": "Fame 2",
+              "clip": true,
+              "width": 83,
+              "height": 40,
+              "fill": "$gold",
+              "cornerRadius": 6,
+              "gap": 5,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "XFb3e",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "file-search",
+                  "library": "lucide",
+                  "fill": "$surface"
+                },
+                {
+                  "type": "text",
+                  "id": "AkZ7u",
+                  "name": "Файл",
+                  "fill": "$surface",
+                  "content": "File",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VNw2D",
+              "name": "Export",
+              "height": 40,
+              "fill": "$gold",
+              "cornerRadius": 6,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ozAHI",
+                  "name": "Напис",
+                  "fill": "#071018",
+                  "content": "Export",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L0YhQ",
+          "name": "Робоча область",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xl1QX",
+              "name": "Панель інструментів",
+              "width": 64,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "right": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L9J9V",
+                  "name": "Інструмент · mouse-pointer-2",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$gold",
+                  "cornerRadius": 6,
+                  "stroke": "$gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "nzjyj",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "mouse-pointer-2",
+                      "library": "lucide",
+                      "fill": "#FBF7EC"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VArbe",
+                  "name": "Інструмент · hand",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "YT0XS",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "hand",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "f7qUS",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "xKcDz",
+                  "name": "Інструмент · pen-tool",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "acASY",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pen-tool",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S4JT1y",
+                  "name": "Інструмент · brush",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ykMQt",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "brush",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wlbGV",
+                  "name": "Інструмент · eraser",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "rSS4A",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "eraser",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "p4XWb",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "nZqqk",
+                  "name": "Інструмент · type",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "PnlOz",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "type",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q3GjZU",
+                  "name": "Інструмент · square",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ZdT4R",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a8DDY",
+                  "name": "Інструмент · circle",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "oK7DV",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "circle",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wT1Wv",
+                  "name": "Інструмент · image",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "tS7PN",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "image",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vky9C",
+                  "name": "Інструмент · pipette",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "kz78G",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pipette",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V5XfZ",
+                  "name": "Відступ",
+                  "width": 1,
+                  "height": "fill_container"
+                },
+                {
+                  "type": "frame",
+                  "id": "kFhKl",
+                  "name": "Масштаб",
+                  "width": 48,
+                  "height": 48,
+                  "cornerRadius": 6,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ttnVD",
+                      "name": "Іконка лупи",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "zoom-in",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OUQhb",
+                      "name": "Відсоток",
+                      "fill": "$ink-soft",
+                      "content": "100%",
+                      "fontFamily": "Instrument Serif",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PxdKn",
+              "name": "Полотно",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$bg",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JkCLY",
+                  "layoutPosition": "absolute",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Сітка",
+                  "opacity": 0.55,
+                  "width": 1112,
+                  "height": 812,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "P1YiZn",
+                      "x": 40,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "YKTYm",
+                      "x": 80,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "s9qcy",
+                      "x": 120,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "O7pim",
+                      "x": 160,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cDEod",
+                      "x": 200,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "w3SSHj",
+                      "x": 240,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "a7tUJs",
+                      "x": 280,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "v09Sn7",
+                      "x": 320,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "bPGd6",
+                      "x": 360,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "b5bxA",
+                      "x": 400,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "N5nhp",
+                      "x": 440,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "y7Wnj",
+                      "x": 480,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "TmDER",
+                      "x": 520,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "nKZIV",
+                      "x": 560,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "fDC7p",
+                      "x": 600,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "H3BTTF",
+                      "x": 640,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "tBToR",
+                      "x": 680,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "g6xdnp",
+                      "x": 720,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "tfKNo",
+                      "x": 760,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "VL1hy",
+                      "x": 800,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "PzsrJ",
+                      "x": 840,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Ptxnv",
+                      "x": 880,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "BUiYT",
+                      "x": 920,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "hXC0j",
+                      "x": 960,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "P7eUd",
+                      "x": 1000,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cwTIB",
+                      "x": 1040,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "WLKLq",
+                      "x": 1080,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "gqXyU",
+                      "x": 0,
+                      "y": 40,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ecWgl",
+                      "x": 0,
+                      "y": 80,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "XHYGt",
+                      "x": 0,
+                      "y": 120,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "V05sbt",
+                      "x": 0,
+                      "y": 160,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "m5DwjS",
+                      "x": 0,
+                      "y": 200,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "o2HOq",
+                      "x": 0,
+                      "y": 240,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "qRrSW",
+                      "x": 0,
+                      "y": 280,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "vpBuv",
+                      "x": 0,
+                      "y": 320,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "q56Vu",
+                      "x": 0,
+                      "y": 360,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cHSYC",
+                      "x": 0,
+                      "y": 400,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "TUIyb",
+                      "x": 0,
+                      "y": 440,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "SuNE3",
+                      "x": 0,
+                      "y": 480,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "wSJ0V",
+                      "x": 0,
+                      "y": 520,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Bjnj3",
+                      "x": 0,
+                      "y": 560,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "JW13D",
+                      "x": 0,
+                      "y": 600,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "F9LlFW",
+                      "x": 0,
+                      "y": 640,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Bu3h2",
+                      "x": 0,
+                      "y": 680,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "k2mBz",
+                      "x": 0,
+                      "y": 720,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "I8bIt",
+                      "x": 0,
+                      "y": 760,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "zhr9s",
+                      "x": 0,
+                      "y": 800,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p6Jzjs",
+                  "name": "Артборд",
+                  "width": 600,
+                  "height": 500,
+                  "fill": "$surface",
+                  "cornerRadius": 8,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000066",
+                      "offset": {
+                        "x": 0,
+                        "y": 20
+                      },
+                      "blur": 60
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#3EE6FF2B",
+                      "blur": 48
+                    }
+                  ],
+                  "layout": "none"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gZ6VG",
+              "name": "Панель властивостей",
+              "width": 264,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "left": 1
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lr5ef",
+                  "name": "Назва панелі",
+                  "fill": "$ink",
+                  "content": "Properties",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "VEq0E",
+                  "name": "Елемент",
+                  "width": "fill_container",
+                  "height": 39,
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yOuNP",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "Button",
+                      "fontFamily": "Instrument Serif",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VbyYp",
+                  "name": "Координати",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iuwYq",
+                      "name": "Поле X",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EimyY",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "X",
+                          "fontFamily": "Instrument Serif",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VQ3Io",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FUrWX",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "320",
+                              "fontFamily": "Instrument Serif",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f4KFzn",
+                      "name": "Поле Y",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B0tmx",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "Y",
+                          "fontFamily": "Instrument Serif",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IulBG",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "E91da9",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "148",
+                              "fontFamily": "Instrument Serif",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NgG0k",
+                  "name": "Розміри",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ATBZ8",
+                      "name": "Поле Ш",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kKguJ",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "W",
+                          "fontFamily": "Instrument Serif",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "STnjV",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "En1o4",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "412",
+                              "fontFamily": "Instrument Serif",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YnIvr",
+                      "name": "Поле В",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IKwnK",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "H",
+                          "fontFamily": "Instrument Serif",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "M6AUk",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fphyX",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "268",
+                              "fontFamily": "Instrument Serif",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "OCNyL",
+                  "name": "Розділювач панелі",
+                  "fill": "$border",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "iPZr0",
+                  "name": "Назва шарів",
+                  "fill": "$ink",
+                  "content": "Layers",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "AUPk2",
+                  "name": "Шар · Артборд · Пергамент",
+                  "width": "fill_container",
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "tOXSX",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ylu4G",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Artboard · Parchment",
+                      "fontFamily": "Instrument Serif",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "fvFO7",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "INraL",
+                  "name": "Шар · Сітка",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "KFIYN",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "grid-3x3",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RvJTX",
+                      "name": "Назва",
+                      "fill": "$ink-soft",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grid",
+                      "fontFamily": "Instrument Serif",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "QsL1H",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tb2BP",
+          "name": "Рядок стану",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "MorM4",
+              "name": "Статус",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "vbn3Z",
+                  "name": "Індикатор",
+                  "fill": "$gold",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Wjc88",
+                  "name": "Текст статусу",
+                  "fill": "$ink-soft",
+                  "content": "Screen resolution",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "YlJn4",
+              "name": "Координати",
+              "fill": "$ink-soft",
+              "content": "X 320 · Y 148",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "G1qLf",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "ezjZ8",
+              "name": "Палітра",
+              "fill": "$gold",
+              "content": "Forest Sage",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "VBkhS",
+              "name": "Масштаб",
+              "fill": "$ink-soft",
+              "content": "Zoom 100%",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yKQDU",
+      "x": 0,
+      "y": 0,
+      "name": "Редактор — Каліграфічне Ательє",
+      "theme": {
+        "mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "a9e18P",
+          "name": "Верхня панель",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tiKjR",
+              "name": "Fame 1",
+              "clip": true,
+              "width": 143,
+              "height": 45,
+              "fill": "$gold",
+              "cornerRadius": 10,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#424d4f80",
+                "offset": {
+                  "x": -5,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RSCM5",
+                  "name": "Логотип",
+                  "theme": {
+                    "mode": "dark"
+                  },
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hgrQg",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "UIForge",
+                      "fontFamily": "Knewave",
+                      "fontSize": 25,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WzgQD",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "b1de0",
+              "name": "Fame 2",
+              "clip": true,
+              "width": 83,
+              "height": 40,
+              "fill": "$gold",
+              "cornerRadius": 10,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J9Gc1P",
+                  "name": "Файл",
+                  "fill": "#ffffffff",
+                  "content": "File",
+                  "fontFamily": "$font-body",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oDh9D",
+              "name": "Export",
+              "height": 40,
+              "fill": "$gold",
+              "cornerRadius": 6,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZntSH",
+                  "name": "Напис",
+                  "fill": "#071018",
+                  "content": "Export",
+                  "fontFamily": "$font-body",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q3S3L",
+          "name": "Робоча область",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SKm31",
+              "name": "Панель інструментів",
+              "width": 64,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "right": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RsV0K",
+                  "name": "Інструмент · mouse-pointer-2",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$gold",
+                  "cornerRadius": 6,
+                  "stroke": "$gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "eymWN",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "mouse-pointer-2",
+                      "library": "lucide",
+                      "fill": "#FBF7EC"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I8J3xe",
+                  "name": "Інструмент · hand",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "yPfWM",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "hand",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "Exr5P",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "vVeZN",
+                  "name": "Інструмент · pen-tool",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "VV0MG",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pen-tool",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hJQcG",
+                  "name": "Інструмент · brush",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "efF27",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "brush",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x8JSjo",
+                  "name": "Інструмент · eraser",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "zhxJE",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "eraser",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BBbjC",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "JLvOA",
+                  "name": "Інструмент · type",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "z23Htd",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "type",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L4Ttq0",
+                  "name": "Інструмент · square",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "VSBVQ",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CWG0Q",
+                  "name": "Інструмент · circle",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "D6Pnw",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "circle",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JGMMO",
+                  "name": "Інструмент · image",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "uMEvn",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "image",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v1CU1b",
+                  "name": "Інструмент · pipette",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "j02Ky",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pipette",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MzVgY",
+                  "name": "Відступ",
+                  "width": 1,
+                  "height": "fill_container"
+                },
+                {
+                  "type": "frame",
+                  "id": "OGuQs",
+                  "name": "Масштаб",
+                  "width": 48,
+                  "height": 48,
+                  "cornerRadius": 6,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "C9lWWM",
+                      "name": "Іконка лупи",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "zoom-in",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ro34q",
+                      "name": "Відсоток",
+                      "fill": "$ink-soft",
+                      "content": "100%",
+                      "fontFamily": "Italiana",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CZD6A",
+              "name": "Полотно",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$bg",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BKFoa",
+                  "layoutPosition": "absolute",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Сітка",
+                  "opacity": 0.55,
+                  "width": 1112,
+                  "height": 812,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "ALyP1",
+                      "x": 40,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "YaJF8",
+                      "x": 80,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Icpf4",
+                      "x": 120,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "eEByF",
+                      "x": 160,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "K3Hjs",
+                      "x": 200,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "o7bG5c",
+                      "x": 240,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "S0BJd6",
+                      "x": 280,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "kWgHI",
+                      "x": 320,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "MJ0wk",
+                      "x": 360,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "xeNHO",
+                      "x": 400,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "H0ET2Y",
+                      "x": 440,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "KJ4hA",
+                      "x": 480,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "p6FGD",
+                      "x": 520,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "QD4ie",
+                      "x": 560,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "G2OF5",
+                      "x": 600,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "o0Swtu",
+                      "x": 640,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "rm0iq",
+                      "x": 680,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "p9mqo",
+                      "x": 720,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "NWpKr",
+                      "x": 760,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "yhVry",
+                      "x": 800,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Qpp7h",
+                      "x": 840,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "L7Vhu",
+                      "x": 880,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Dbet1",
+                      "x": 920,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "f4T1QV",
+                      "x": 960,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "FoYaA",
+                      "x": 1000,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "vVqBr",
+                      "x": 1040,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "HuyBq",
+                      "x": 1080,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "a6Au9r",
+                      "x": 0,
+                      "y": 40,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "f4k0g",
+                      "x": 0,
+                      "y": 80,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "WNPHb",
+                      "x": 0,
+                      "y": 120,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "VMENG",
+                      "x": 0,
+                      "y": 160,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "V6KZR",
+                      "x": 0,
+                      "y": 200,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "CMZHP",
+                      "x": 0,
+                      "y": 240,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "F59Xs",
+                      "x": 0,
+                      "y": 280,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "y8Fu7y",
+                      "x": 0,
+                      "y": 320,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "F3Bw2",
+                      "x": 0,
+                      "y": 360,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "L0XAau",
+                      "x": 0,
+                      "y": 400,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "MrnV6",
+                      "x": 0,
+                      "y": 440,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "M4riu",
+                      "x": 0,
+                      "y": 480,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "mvyCm",
+                      "x": 0,
+                      "y": 520,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "p0eiY",
+                      "x": 0,
+                      "y": 560,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "uOyWI",
+                      "x": 0,
+                      "y": 600,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "pt4LB",
+                      "x": 0,
+                      "y": 640,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "eZc0F",
+                      "x": 0,
+                      "y": 680,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "HR3RV",
+                      "x": 0,
+                      "y": 720,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "X30aP",
+                      "x": 0,
+                      "y": 760,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Vfh7P",
+                      "x": 0,
+                      "y": 800,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gy0ol",
+                  "name": "Артборд",
+                  "width": 600,
+                  "height": 500,
+                  "fill": "$surface",
+                  "cornerRadius": 8,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000066",
+                      "offset": {
+                        "x": 0,
+                        "y": 20
+                      },
+                      "blur": 60
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#3EE6FF2B",
+                      "blur": 48
+                    }
+                  ],
+                  "layout": "none"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m7IyG",
+              "name": "Панель властивостей",
+              "width": 264,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "left": 1
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T75ZLX",
+                  "name": "Назва панелі",
+                  "fill": "$ink",
+                  "content": "Properties",
+                  "fontFamily": "Italiana",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "nuKAo",
+                  "name": "Елемент",
+                  "width": "fill_container",
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xPd6k",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "Button",
+                      "fontFamily": "Italiana",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NSY6V",
+                  "name": "Координати",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i4eOJk",
+                      "name": "Поле X",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "saiwN",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "X",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "m2jKiI",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NIEgs",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "320",
+                              "fontFamily": "Italiana",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uVTvh",
+                      "name": "Поле Y",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T5O8XF",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "Y",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LJzxO",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AebRq",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "148",
+                              "fontFamily": "Italiana",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M0BpK",
+                  "name": "Розміри",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ss6Jd",
+                      "name": "Поле Ш",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yNAL0",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "W",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hPX2O",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "np8jr",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "412",
+                              "fontFamily": "Italiana",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nRePZ",
+                      "name": "Поле В",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ooGl2",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "H",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Z0hEgr",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "V3Tli5",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "268",
+                              "fontFamily": "Italiana",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "rFAo6",
+                  "name": "Розділювач панелі",
+                  "fill": "$border",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "LTU8b",
+                  "name": "Назва шарів",
+                  "fill": "$ink",
+                  "content": "Layers",
+                  "fontFamily": "$font-body",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "u2jbu9",
+                  "name": "Шар · Артборд · Пергамент",
+                  "width": "fill_container",
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Vi33E",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fIZMZ",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Artboard · Parchment",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "xGz8a",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nWrfV",
+                  "name": "Шар · Сітка",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "qWHIO",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "grid-3x3",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L194JU",
+                      "name": "Назва",
+                      "fill": "$ink-soft",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grid",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "vKRnN",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f3yl6",
+          "name": "Рядок стану",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "QSyVk",
+              "name": "Статус",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "uTChC",
+                  "name": "Індикатор",
+                  "fill": "$gold",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "CUsx5",
+                  "name": "Текст статусу",
+                  "fill": "$ink-soft",
+                  "content": "Screen resolution",
+                  "fontFamily": "Italiana",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "F5yZ7",
+              "name": "Координати",
+              "fill": "$ink-soft",
+              "content": "X 320 · Y 148",
+              "fontFamily": "Italiana",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "G4zMjr",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "whRr9",
+              "name": "Палітра",
+              "fill": "$gold",
+              "content": "Calligraphy Atelier",
+              "fontFamily": "Italiana",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "jHVjC",
+              "name": "Масштаб",
+              "fill": "$ink-soft",
+              "content": "Zoom 100%",
+              "fontFamily": "Italiana",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dxoYw",
+      "x": 1520,
+      "y": 0,
+      "name": "Редактор — Deep Space Neon",
+      "theme": {
+        "mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Dh9Cl",
+          "name": "Верхня панель",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "y6izqE",
+              "name": "Frame 1",
+              "clip": true,
+              "width": 143,
+              "height": 45,
+              "fill": "#232b45ff",
+              "cornerRadius": 10,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#3de5ff80",
+                "offset": {
+                  "x": -5,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q2wii",
+                  "name": "Логотип",
+                  "theme": {
+                    "mode": "dark"
+                  },
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IigZ9",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "UIForge",
+                      "fontFamily": "Knewave",
+                      "fontSize": 25,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RDv8F",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 8
+            },
+            {
+              "type": "frame",
+              "id": "G36Uf",
+              "name": "Frame 2",
+              "clip": true,
+              "width": 83,
+              "height": 40,
+              "fill": "$border",
+              "cornerRadius": 10,
+              "gap": 5,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "eMkQb",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "file-search",
+                  "library": "lucide",
+                  "fill": "#000000"
+                },
+                {
+                  "type": "text",
+                  "id": "V0F3uY",
+                  "name": "Файл",
+                  "fill": "$ink-soft",
+                  "content": "File",
+                  "fontFamily": "Manrope",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E3zey",
+              "name": "Export",
+              "height": 40,
+              "fill": "$gold",
+              "cornerRadius": 6,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zhr74",
+                  "name": "Напис",
+                  "fill": "#071018",
+                  "content": "Export",
+                  "fontFamily": "Manrope",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RySph",
+          "name": "Робоча область",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bS1XQ",
+              "name": "Панель інструментів",
+              "width": 64,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "right": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w6vOKV",
+                  "name": "Інструмент · mouse-pointer-2",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$gold",
+                  "cornerRadius": 6,
+                  "stroke": "$gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "M6kfOo",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "mouse-pointer-2",
+                      "library": "lucide",
+                      "fill": "#FBF7EC"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XCNJn",
+                  "name": "Інструмент · hand",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "I9dQSE",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "hand",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "V0Ujn",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "WZZNk",
+                  "name": "Інструмент · pen-tool",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "rITJx",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pen-tool",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cHziz",
+                  "name": "Інструмент · brush",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "cZPvD",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "brush",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n1Eu3",
+                  "name": "Інструмент · eraser",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ToKEc",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "eraser",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "y2kJYB",
+                  "name": "Розділювач",
+                  "fill": "$border",
+                  "width": 32,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "U46Xk",
+                  "name": "Інструмент · type",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "fivnV",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "type",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T2iPID",
+                  "name": "Інструмент · square",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "WuVwv",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "km5q4",
+                  "name": "Інструмент · circle",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "zM76G",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "circle",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KPUfc",
+                  "name": "Інструмент · image",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "N7wNTA",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "image",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "loFZq",
+                  "name": "Інструмент · pipette",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$surface",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "C4llE",
+                      "name": "Іконка",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "pipette",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ukev0",
+                  "name": "Відступ",
+                  "width": 1,
+                  "height": "fill_container"
+                },
+                {
+                  "type": "frame",
+                  "id": "ixqdY",
+                  "name": "Масштаб",
+                  "width": 48,
+                  "height": 48,
+                  "cornerRadius": 6,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "CL3ni",
+                      "name": "Іконка лупи",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "zoom-in",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uNjjf",
+                      "name": "Відсоток",
+                      "fill": "$ink-soft",
+                      "content": "100%",
+                      "fontFamily": "Manrope",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gYC1t",
+              "name": "Полотно",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$bg",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XX2k3",
+                  "layoutPosition": "absolute",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Сітка",
+                  "opacity": 0.55,
+                  "width": 1112,
+                  "height": 812,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "WOihy",
+                      "x": 40,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "VMdGX",
+                      "x": 80,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Zj6ni",
+                      "x": 120,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ZepHY",
+                      "x": 160,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "C2oU4",
+                      "x": 200,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "AqbXu",
+                      "x": 240,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "WBlwT",
+                      "x": 280,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Fqkl7",
+                      "x": 320,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "uehCD",
+                      "x": 360,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "G9QfT",
+                      "x": 400,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "PioaG",
+                      "x": 440,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "K7yuql",
+                      "x": 480,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "BE6rl",
+                      "x": 520,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Rekkk",
+                      "x": 560,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "TWEYh",
+                      "x": 600,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "r4ejKF",
+                      "x": 640,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "P7yGk",
+                      "x": 680,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "BoycI",
+                      "x": 720,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Ehdca",
+                      "x": 760,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Flxb6",
+                      "x": 800,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "IPgd1",
+                      "x": 840,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "dVqXv",
+                      "x": 880,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "kIeZ1",
+                      "x": 920,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "unZjT",
+                      "x": 960,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "P7YFMD",
+                      "x": 1000,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Hv5cV",
+                      "x": 1040,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "iVL1T",
+                      "x": 1080,
+                      "y": 0,
+                      "name": "V",
+                      "fill": "$border",
+                      "width": 1,
+                      "height": 812
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "MIIEP",
+                      "x": 0,
+                      "y": 40,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "trNoM",
+                      "x": 0,
+                      "y": 80,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Y4cGN",
+                      "x": 0,
+                      "y": 120,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "x98eII",
+                      "x": 0,
+                      "y": 160,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "SBauL",
+                      "x": 0,
+                      "y": 200,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cPrwy",
+                      "x": 0,
+                      "y": 240,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "yxube",
+                      "x": 0,
+                      "y": 280,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "viP7T",
+                      "x": 0,
+                      "y": 320,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "lAHwg",
+                      "x": 0,
+                      "y": 360,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "qvhW4",
+                      "x": 0,
+                      "y": 400,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Ruil4",
+                      "x": 0,
+                      "y": 440,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cDlK1",
+                      "x": 0,
+                      "y": 480,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "S3RWY",
+                      "x": 0,
+                      "y": 520,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "n40ctw",
+                      "x": 0,
+                      "y": 560,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "qPaXT",
+                      "x": 0,
+                      "y": 600,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "behWD",
+                      "x": 0,
+                      "y": 640,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "pWYOP",
+                      "x": 0,
+                      "y": 680,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "hgnP7",
+                      "x": 0,
+                      "y": 720,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "I5L3l",
+                      "x": 0,
+                      "y": 760,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "s3mjhS",
+                      "x": 0,
+                      "y": 800,
+                      "name": "H",
+                      "fill": "$border",
+                      "width": 1112,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nJlQk",
+                  "name": "Артборд",
+                  "width": 600,
+                  "height": 500,
+                  "fill": "$surface",
+                  "cornerRadius": 8,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000066",
+                      "offset": {
+                        "x": 0,
+                        "y": 20
+                      },
+                      "blur": 60
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#3EE6FF2B",
+                      "blur": 48
+                    }
+                  ],
+                  "layout": "none"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A8uV01",
+              "name": "Панель властивостей",
+              "width": 264,
+              "height": "fill_container",
+              "fill": "$surface",
+              "stroke": "$border",
+              "strokeWidth": {
+                "left": 1
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EXbCO",
+                  "name": "Назва панелі",
+                  "fill": "$ink",
+                  "content": "Properties",
+                  "fontFamily": "Manrope",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "m0XPXt",
+                  "name": "Елемент",
+                  "width": "fill_container",
+                  "height": 39,
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RNBy2",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "content": "Button",
+                      "fontFamily": "Manrope",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c5iGQa",
+                  "name": "Координати",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J5gmK",
+                      "name": "Поле X",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RZs7d",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "X",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Latly",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "w1BtE",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "320",
+                              "fontFamily": "Manrope",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "INCHN",
+                      "name": "Поле Y",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "L6t5XG",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "Y",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "InLWp",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mIJ5E",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "148",
+                              "fontFamily": "Manrope",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j1lQ1u",
+                  "name": "Розміри",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Yktit",
+                      "name": "Поле Ш",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "L0d79S",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "W",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "V1Zlgm",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bgJMy",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "412",
+                              "fontFamily": "Manrope",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qCcFC",
+                      "name": "Поле В",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ohTGK",
+                          "name": "Мітка",
+                          "fill": "$ink-soft",
+                          "content": "H",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LLsZ0",
+                          "name": "Ввід",
+                          "width": "fill_container",
+                          "height": 32,
+                          "fill": "$bg",
+                          "cornerRadius": 6,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oSIkG",
+                              "name": "Значення",
+                              "fill": "$ink",
+                              "content": "268",
+                              "fontFamily": "Manrope",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "K0ZCm1",
+                  "name": "Розділювач панелі",
+                  "fill": "$border",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "kUSup",
+                  "name": "Назва шарів",
+                  "fill": "$ink",
+                  "content": "Layers",
+                  "fontFamily": "Manrope",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "iVZOi",
+                  "name": "Шар · Артборд · Пергамент",
+                  "width": "fill_container",
+                  "fill": "$gold-soft",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "TpWcW",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "square",
+                      "library": "lucide",
+                      "fill": "$gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W9YvN",
+                      "name": "Назва",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Artboard · Parchment",
+                      "fontFamily": "Manrope",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "jsVV0",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tGzgd",
+                  "name": "Шар · Сітка",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ZjXwo",
+                      "name": "Іконка шару",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "grid-3x3",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HL2hG",
+                      "name": "Назва",
+                      "fill": "$ink-soft",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grid",
+                      "fontFamily": "Manrope",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "AVJ6g",
+                      "name": "Око",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "eye",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f2RPa",
+          "name": "Рядок стану",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "gap": 24,
+          "padding": [
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "BQKrD",
+              "name": "Статус",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "Z44ghG",
+                  "name": "Індикатор",
+                  "fill": "$gold",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "gSIeW",
+                  "name": "Текст статусу",
+                  "fill": "$ink-soft",
+                  "content": "Screen resolution",
+                  "fontFamily": "Manrope",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "pWLrA",
+              "name": "Координати",
+              "fill": "$ink-soft",
+              "content": "X 320 · Y 148",
+              "fontFamily": "Manrope",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "O4CFhj",
+              "name": "Роздільник",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "ksEEP",
+              "name": "Палітра",
+              "fill": "$gold",
+              "content": "Deep Space Neon",
+              "fontFamily": "Manrope",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "giwow",
+              "name": "Масштаб",
+              "fill": "$ink-soft",
+              "content": "Zoom 100%",
+              "fontFamily": "Manrope",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark",
+      "sage"
+    ]
+  },
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EDE4CF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0A0D18",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#D9E1CC",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FBF7EC",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#151C30",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#F4F3EA",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#2E2517",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#E9EDF8",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1E2A1C",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "ink-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#7A6C52",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8A93B0",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#6C7B60",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "gold": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A8842F",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#3EE6FF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#4C6B43",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "gold-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EBDCB2",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#14324A",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#CDDCBE",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E1D5BB",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#232B45",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#C6D1B7",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "font-heading": {
+      "type": "string",
+      "value": [
+        {
+          "value": "Italiana",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "Space Grotesk",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "Instrument Serif",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "font-body": {
+      "type": "string",
+      "value": [
+        {
+          "value": "Archivo",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "Manrope",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "Manrope",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    },
+    "font-caption": {
+      "type": "string",
+      "value": [
+        {
+          "value": "Ballet",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "Instrument Sans",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "Fragment Mono",
+          "theme": {
+            "mode": "sage"
+          }
+        }
+      ]
+    }
+  },
+  "fileToken": "e59152ad-151e-4fd7-99ee-b654b1122316"
+}
